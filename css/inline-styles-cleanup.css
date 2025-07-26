@@ -1,0 +1,147 @@
+/* Inline Styles Cleanup - Queen Rose Hiking Trail App */
+/* This file contains extracted inline styles for better maintainability */
+
+/* KML Upload Section */
+#kml-file-input {
+    margin-bottom: 10px;
+}
+
+#kml-upload-status {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Booking Section */
+#booking-confirmation {
+    display: none;
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Weather Section */
+#refresh-weather-btn {
+    margin-bottom: 10px;
+}
+
+#weather-last-updated {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+#hiking-recommendation {
+    display: none;
+    padding: 10px;
+    background-color: #eef;
+    border-left: 5px solid #3498db;
+    margin-bottom: 15px;
+}
+
+#weather-forecast-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Directions Section */
+.directions-banner {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Debug Section */
+#debug-log-section {
+    display: none; /* Hidden by default */
+}
+
+/* Footer Positioning */
+.page-footer-left {
+    left: 16px;
+    right: auto;
+}
+
+/* Utility Classes for Common Patterns */
+.hidden {
+    display: none;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+.text-success {
+    color: green;
+    font-weight: bold;
+}
+
+.text-small {
+    font-size: 0.9em;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.info-box {
+    padding: 10px;
+    background-color: #eef;
+    border-left: 5px solid #3498db;
+    margin-bottom: 15px;
+}
+
+.responsive-image {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Responsive Design Improvements */
+@media (max-width: 768px) {
+    .directions-banner,
+    .responsive-image {
+        margin: 5px auto;
+    }
+    
+    #weather-forecast-container {
+        gap: 5px;
+    }
+    
+    .info-box {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .directions-banner,
+    .responsive-image {
+        margin: 2px auto;
+    }
+    
+    .info-box {
+        padding: 6px;
+        font-size: 0.9em;
+    }
+}
+

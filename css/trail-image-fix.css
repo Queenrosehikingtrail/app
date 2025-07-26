@@ -1,0 +1,36 @@
+/* Trail Information Image Fix - Enhanced Size Display */
+
+/* Target trail elevation images specifically */
+#trail-details .trail-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border-radius: 8px;
+    object-fit: contain; /* Prevent stretching - maintain aspect ratio */
+    max-height: 500px; /* Significantly increased from 300px for larger display */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add subtle shadow for better visual appeal */
+}
+
+/* Ensure trail item containers don't force image stretching */
+#trail-details .trail-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    #trail-details .trail-item img {
+        max-height: 400px; /* Increased from 250px for better mobile viewing */
+        margin: 12px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #trail-details .trail-item img {
+        max-height: 320px; /* Increased from 200px for better small screen viewing */
+        margin: 10px 0;
+    }
+}
+
